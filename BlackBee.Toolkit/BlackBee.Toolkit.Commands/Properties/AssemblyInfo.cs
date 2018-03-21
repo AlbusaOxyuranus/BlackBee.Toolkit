@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BlackBee.Toolkit")]
+[assembly: AssemblyTitle("BlackBee.Toolkit.Commands")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Denis Prokhorchik")]
-[assembly: AssemblyProduct("BlackBee.Toolkit")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("BlackBee.Toolkit.Commands")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c6e29e63-ba4b-48b9-8685-63a3ea0be54a")]
+[assembly: Guid("7cba2f8c-e1a2-4e4d-9f56-92de7a1890e1")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C6E29E63-BA4B-48B9-8685-63A3EA0BE54A}</ProjectGuid>
+    <ProjectGuid>{7CBA2F8C-E1A2-4E4D-9F56-92DE7A1890E1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlackBee.Toolkit</RootNamespace>
-    <AssemblyName>BlackBee.Toolkit</AssemblyName>
+    <RootNamespace>BlackBee.Toolkit.Commands</RootNamespace>
+    <AssemblyName>BlackBee.Toolkit.Commands</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,31 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\BlackBee.Toolkit.Base\ObjectBase.cs">
-      <Link>Base\ObjectBase.cs</Link>
-    </Compile>
-    <Compile Include="..\BlackBee.Toolkit.Commands\AsyncCommand.cs">
-      <Link>Commands\AsyncCommand.cs</Link>
-    </Compile>
-    <Compile Include="..\BlackBee.Toolkit.Commands\AsyncCommandBase.cs">
-      <Link>Commands\AsyncCommandBase.cs</Link>
-    </Compile>
-    <Compile Include="..\BlackBee.Toolkit.Commands\IAsyncCommand.cs">
-      <Link>Commands\IAsyncCommand.cs</Link>
-    </Compile>
-    <Compile Include="..\BlackBee.Toolkit.Commands\NotifyTaskCompletion.cs">
-      <Link>Commands\NotifyTaskCompletion.cs</Link>
-    </Compile>
-    <Compile Include="..\BlackBee.Toolkit.Commands\RelayCommand.cs">
-      <Link>Commands\RelayCommand.cs</Link>
-    </Compile>
+    <Compile Include="AsyncCommand.cs" />
+    <Compile Include="AsyncCommandBase.cs" />
+    <Compile Include="IAsyncCommand.cs" />
+    <Compile Include="NotifyTaskCompletion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BlackBee.Toolkit.Base\BlackBee.Toolkit.Base.csproj">
-      <Project>{E0DBA13B-0D7E-4367-ADA6-62B862D1DFBF}</Project>
-      <Name>BlackBee.Toolkit.Base</Name>
-    </ProjectReference>
+    <Compile Include="RelayCommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
