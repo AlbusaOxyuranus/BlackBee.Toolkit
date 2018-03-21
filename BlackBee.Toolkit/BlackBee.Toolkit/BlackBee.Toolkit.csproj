@@ -43,6 +43,9 @@
     <Compile Include="..\BlackBee.Toolkit.Base\ObjectBase.cs">
       <Link>Base\ObjectBase.cs</Link>
     </Compile>
+    <Compile Include="..\BlackBee.Toolkit.Base\ViewModelBase.cs">
+      <Link>Base\ViewModelBase.cs</Link>
+    </Compile>
     <Compile Include="..\BlackBee.Toolkit.Commands\AsyncCommand.cs">
       <Link>Commands\AsyncCommand.cs</Link>
     </Compile>
