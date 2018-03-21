@@ -10,6 +10,8 @@
             BussinessProcessMessage = "Выполнение операции";
         }
 
+        #region Fields
+
         /// <summary>
         /// Поле для шторки которая показывает процесс выполнения
         /// </summary>
@@ -35,5 +37,7 @@
                 OnPropertyChanged();
             }
         }
+
+        #endregion
     }
 }
