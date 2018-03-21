@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E0DBA13B-0D7E-4367-ADA6-62B862D1DFBF}</ProjectGuid>
+    <ProjectGuid>{C6E29E63-BA4B-48B9-8685-63A3EA0BE54A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlackBee.Toolkit.Base</RootNamespace>
-    <AssemblyName>BlackBee.Toolkit.Base</AssemblyName>
+    <RootNamespace>BlackBee.Toolkit</RootNamespace>
+    <AssemblyName>BlackBee.Toolkit</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,9 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ObjectBase.cs" />
-    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="..\BlackBee.Toolkit.Base\ObjectBase.cs">
+      <Link>Base\ObjectBase.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackBee.Toolkit.Base\BlackBee.Toolkit.Base.csproj">
+      <Project>{E0DBA13B-0D7E-4367-ADA6-62B862D1DFBF}</Project>
+      <Name>BlackBee.Toolkit.Base</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
