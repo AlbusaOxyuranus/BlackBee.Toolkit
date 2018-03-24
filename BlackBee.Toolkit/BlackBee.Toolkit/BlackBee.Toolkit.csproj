@@ -43,6 +43,9 @@
     <Compile Include="..\BlackBee.Toolkit.Base\ObjectBase.cs">
       <Link>Base\ObjectBase.cs</Link>
     </Compile>
+    <Compile Include="..\BlackBee.Toolkit.Base\Store.cs">
+      <Link>Base\Store.cs</Link>
+    </Compile>
     <Compile Include="..\BlackBee.Toolkit.Base\ViewModelBase.cs">
       <Link>Base\ViewModelBase.cs</Link>
     </Compile>
