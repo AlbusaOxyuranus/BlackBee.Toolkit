@@ -43,6 +43,9 @@
     <Compile Include="..\BlackBee.Toolkit.Base\ObjectBase.cs">
       <Link>Base\ObjectBase.cs</Link>
     </Compile>
+    <Compile Include="..\BlackBee.Toolkit.Base\Properties\Annotations.cs">
+      <Link>Properties\Annotations.cs</Link>
+    </Compile>
     <Compile Include="..\BlackBee.Toolkit.Base\Store.cs">
       <Link>Base\Store.cs</Link>
     </Compile>
@@ -67,9 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BlackBee.Toolkit.Base\BlackBee.Toolkit.Base.csproj">
+    <ProjectReference Include="..\BlackBee.Toolkit.Base\BlackBee.Toolkit.Base.WPF.csproj">
       <Project>{E0DBA13B-0D7E-4367-ADA6-62B862D1DFBF}</Project>
-      <Name>BlackBee.Toolkit.Base</Name>
+      <Name>BlackBee.Toolkit.Base.WPF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
