@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBee.Toolkit.Commands.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBee.Toolkit.Base.UWP", "UWP\BlackBee.Toolkit.Base.UWP\BlackBee.Toolkit.Base.UWP.csproj", "{5EFB112B-0A94-4E45-9C4B-8283A1BAC4BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBee.Toolkit.UWP", "UWP\BlackBee.Toolkit.UWP\BlackBee.Toolkit.UWP.csproj", "{A5B6DCF4-8C6D-4309-AADE-9004385B30A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBee.Toolkit.UWP", "UWP\BlackBee.Toolkit\BlackBee.Toolkit.UWP.csproj", "{A5B6DCF4-8C6D-4309-AADE-9004385B30A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
