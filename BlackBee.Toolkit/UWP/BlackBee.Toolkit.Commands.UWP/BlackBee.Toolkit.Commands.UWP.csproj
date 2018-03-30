@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A5B6DCF4-8C6D-4309-AADE-9004385B30A3}</ProjectGuid>
+    <ProjectGuid>{E2925484-044C-4E8C-8350-7689D49642C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlackBee.Toolkit</RootNamespace>
-    <AssemblyName>BlackBee.Toolkit</AssemblyName>
+    <RootNamespace>BlackBee.Toolkit.Commands.UWP</RootNamespace>
+    <AssemblyName>BlackBee.Toolkit.Commands.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
@@ -106,35 +106,23 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\WPF\BlackBee.Toolkit.Base\ObjectBase.cs">
-      <Link>Base\ObjectBase.cs</Link>
-    </Compile>
-    <Compile Include="..\..\WPF\BlackBee.Toolkit.Base\Properties\Annotations.cs">
-      <Link>Properties\Annotations.cs</Link>
-    </Compile>
-    <Compile Include="..\..\WPF\BlackBee.Toolkit.Base\Store.cs">
-      <Link>Base\Store.cs</Link>
-    </Compile>
-    <Compile Include="..\..\WPF\BlackBee.Toolkit.Base\ViewModelBase.cs">
-      <Link>Base\ViewModelBase.cs</Link>
-    </Compile>
     <Compile Include="..\..\WPF\BlackBee.Toolkit.Commands\AsyncCommand.cs">
-      <Link>Commands\AsyncCommand.cs</Link>
+      <Link>AsyncCommand.cs</Link>
     </Compile>
     <Compile Include="..\..\WPF\BlackBee.Toolkit.Commands\AsyncCommandBase.cs">
-      <Link>Commands\AsyncCommandBase.cs</Link>
+      <Link>AsyncCommandBase.cs</Link>
     </Compile>
     <Compile Include="..\..\WPF\BlackBee.Toolkit.Commands\IAsyncCommand.cs">
-      <Link>Commands\IAsyncCommand.cs</Link>
+      <Link>IAsyncCommand.cs</Link>
     </Compile>
     <Compile Include="..\..\WPF\BlackBee.Toolkit.Commands\NotifyTaskCompletion.cs">
-      <Link>Commands\NotifyTaskCompletion.cs</Link>
+      <Link>NotifyTaskCompletion.cs</Link>
     </Compile>
     <Compile Include="..\..\WPF\BlackBee.Toolkit.Commands\RelayCommand.cs">
-      <Link>Commands\RelayCommand.cs</Link>
+      <Link>RelayCommand.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\BlackBee.Toolkit.UWP.rd.xml" />
+    <EmbeddedResource Include="Properties\BlackBee.Toolkit.Commands.UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
