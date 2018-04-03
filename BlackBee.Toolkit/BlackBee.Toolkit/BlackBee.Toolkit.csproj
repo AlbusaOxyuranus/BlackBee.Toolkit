@@ -1,8 +1,71 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D02816E-44A8-473E-AB52-C512B9A06858}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BlackBee.Toolkit</RootNamespace>
+    <AssemblyName>BlackBee.Toolkit</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
-
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\wpf\blackbee.toolkit.base\ObjectBase.cs">
+      <Link>Base\ObjectBase.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF\BlackBee.Toolkit.Base\Properties\Annotations.cs">
+      <Link>Properties\Annotations.cs</Link>
+    </Compile>
+    <Compile Include="..\wpf\blackbee.toolkit.base\Store.cs">
+      <Link>Base\Store.cs</Link>
+    </Compile>
+    <Compile Include="..\wpf\blackbee.toolkit.base\ViewModelBase.cs">
+      <Link>Base\ViewModelBase.cs</Link>
+    </Compile>
+    <Compile Include="..\wpf\blackbee.toolkit.commands\AsyncCommand.cs">
+      <Link>Commands\AsyncCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\wpf\blackbee.toolkit.commands\AsyncCommandBase.cs">
+      <Link>Commands\AsyncCommandBase.cs</Link>
+    </Compile>
+    <Compile Include="..\wpf\blackbee.toolkit.commands\IAsyncCommand.cs">
+      <Link>Commands\IAsyncCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\wpf\blackbee.toolkit.commands\NotifyTaskCompletion.cs">
+      <Link>Commands\NotifyTaskCompletion.cs</Link>
+    </Compile>
+    <Compile Include="..\wpf\blackbee.toolkit.commands\RelayCommand.cs">
+      <Link>Commands\RelayCommand.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
