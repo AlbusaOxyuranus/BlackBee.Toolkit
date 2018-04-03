@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D02816E-44A8-473E-AB52-C512B9A06858}</ProjectGuid>
+    <ProjectGuid>{EDBDF01F-74CD-4F00-8AB2-4F399C4E9379}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>BlackBee.Toolkit</RootNamespace>
     <AssemblyName>BlackBee.Toolkit</AssemblyName>
@@ -38,34 +38,33 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\wpf\blackbee.toolkit.base\ObjectBase.cs">
+    <Compile Include="..\WPF\BlackBee.Toolkit.Base\ObjectBase.cs">
       <Link>Base\ObjectBase.cs</Link>
     </Compile>
-    <Compile Include="..\WPF\BlackBee.Toolkit.Base\Properties\Annotations.cs">
-      <Link>Properties\Annotations.cs</Link>
-    </Compile>
-    <Compile Include="..\wpf\blackbee.toolkit.base\Store.cs">
+    <Compile Include="..\WPF\BlackBee.Toolkit.Base\Store.cs">
       <Link>Base\Store.cs</Link>
     </Compile>
-    <Compile Include="..\wpf\blackbee.toolkit.base\ViewModelBase.cs">
+    <Compile Include="..\WPF\BlackBee.Toolkit.Base\ViewModelBase.cs">
       <Link>Base\ViewModelBase.cs</Link>
     </Compile>
-    <Compile Include="..\wpf\blackbee.toolkit.commands\AsyncCommand.cs">
+    <Compile Include="..\WPF\BlackBee.Toolkit.Commands\AsyncCommand.cs">
       <Link>Commands\AsyncCommand.cs</Link>
     </Compile>
-    <Compile Include="..\wpf\blackbee.toolkit.commands\AsyncCommandBase.cs">
+    <Compile Include="..\WPF\BlackBee.Toolkit.Commands\AsyncCommandBase.cs">
       <Link>Commands\AsyncCommandBase.cs</Link>
     </Compile>
-    <Compile Include="..\wpf\blackbee.toolkit.commands\IAsyncCommand.cs">
+    <Compile Include="..\WPF\BlackBee.Toolkit.Commands\IAsyncCommand.cs">
       <Link>Commands\IAsyncCommand.cs</Link>
     </Compile>
-    <Compile Include="..\wpf\blackbee.toolkit.commands\NotifyTaskCompletion.cs">
+    <Compile Include="..\WPF\BlackBee.Toolkit.Commands\NotifyTaskCompletion.cs">
       <Link>Commands\NotifyTaskCompletion.cs</Link>
     </Compile>
-    <Compile Include="..\wpf\blackbee.toolkit.commands\RelayCommand.cs">
+    <Compile Include="..\WPF\BlackBee.Toolkit.Commands\RelayCommand.cs">
       <Link>Commands\RelayCommand.cs</Link>
     </Compile>
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
