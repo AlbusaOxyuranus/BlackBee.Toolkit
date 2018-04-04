@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BlackBee.Toolkit")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("BlackBee.Toolkit - it is a framework which allows lightning fast to start developing applications WPF, Windows Universal App.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Denis Prokhorchik")]
 [assembly: AssemblyProduct("BlackBee.Toolkit")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
