@@ -30,21 +30,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusyIndicatorControl.xaml.cs">
       <DependentUpon>BusyIndicatorControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="BusyIndicatorPage.cs" />
-    <Compile Include="BusyIndicatorWindow.cs" />
+    <Compile Include="BusyIndicatorView.cs" />
     <Compile Include="ConvertBoolToVisibilite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,6 +57,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackBee.Toolkit.Base\BlackBee.Toolkit.Base.WPF.csproj">
+      <Project>{E0DBA13B-0D7E-4367-ADA6-62B862D1DFBF}</Project>
+      <Name>BlackBee.Toolkit.Base.WPF</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

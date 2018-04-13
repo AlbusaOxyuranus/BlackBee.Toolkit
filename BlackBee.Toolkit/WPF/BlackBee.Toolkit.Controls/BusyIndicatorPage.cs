@@ -1,7 +1,12 @@
-﻿using System.Windows;
-using System.Windows.Controls;
+﻿#if !NETFX_CORE
+    using System.Windows;
+    using System.Windows.Controls;
+#else
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+#endif
 
-namespace XCS.BV.VM.BlackBee.Controls
+namespace BlackBee.Toolkit.Controls
 {
     public class BusyIndicatorPage:Page
     {

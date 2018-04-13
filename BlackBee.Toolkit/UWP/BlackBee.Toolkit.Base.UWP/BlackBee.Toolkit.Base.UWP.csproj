@@ -106,6 +106,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\WPF\BlackBee.Toolkit.Base\Helper\SugarExtensions.cs">
+      <Link>Helper\SugarExtensions.cs</Link>
+    </Compile>
     <Compile Include="..\..\WPF\BlackBee.Toolkit.Base\ObjectBase.cs">
       <Link>ObjectBase.cs</Link>
     </Compile>

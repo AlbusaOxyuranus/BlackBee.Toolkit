@@ -106,6 +106,18 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorControl.xaml.cs">
+      <Link>BusyIndicatorControl.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorPage.cs">
+      <Link>BusyIndicatorPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorView.cs">
+      <Link>BusyIndicatorView.cs</Link>
+    </Compile>
+    <Compile Include="..\..\WPF\BlackBee.Toolkit.Controls\ConvertBoolToVisibilite.cs">
+      <Link>ConvertBoolToVisibilite.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\BlackBee.Toolkit.Controls.rd.xml" />
   </ItemGroup>
@@ -113,6 +125,19 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.8</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BlackBee.Toolkit\BlackBee.Toolkit.csproj">
+      <Project>{EDBDF01F-74CD-4F00-8AB2-4F399C4E9379}</Project>
+      <Name>BlackBee.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorControl.xaml">
+      <Link>BusyIndicatorControl.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

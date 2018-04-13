@@ -38,6 +38,9 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\WPF\BlackBee.Toolkit.Base\Helper\SugarExtensions.cs">
+      <Link>Base\Helper\SugarExtensions.cs</Link>
+    </Compile>
     <Compile Include="..\WPF\BlackBee.Toolkit.Base\ObjectBase.cs">
       <Link>Base\ObjectBase.cs</Link>
     </Compile>
@@ -68,8 +71,8 @@
     <Compile Include="..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorPage.cs">
       <Link>Controls\BusyIndicatorPage.cs</Link>
     </Compile>
-    <Compile Include="..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorWindow.cs">
-      <Link>Controls\BusyIndicatorWindow.cs</Link>
+    <Compile Include="..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorView.cs">
+      <Link>Controls\BusyIndicatorView.cs</Link>
     </Compile>
     <Compile Include="..\WPF\BlackBee.Toolkit.Controls\ConvertBoolToVisibilite.cs">
       <Link>Controls\ConvertBoolToVisibilite.cs</Link>
@@ -77,13 +80,23 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Page Include="..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorControl.xaml">
       <Link>Controls\BusyIndicatorControl.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.1\PresentationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.1\WindowsBase.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
