@@ -62,11 +62,28 @@
     <Compile Include="..\WPF\BlackBee.Toolkit.Commands\RelayCommand.cs">
       <Link>Commands\RelayCommand.cs</Link>
     </Compile>
+    <Compile Include="..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorControl.xaml.cs">
+      <Link>Controls\BusyIndicatorControl.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorPage.cs">
+      <Link>Controls\BusyIndicatorPage.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorWindow.cs">
+      <Link>Controls\BusyIndicatorWindow.cs</Link>
+    </Compile>
+    <Compile Include="..\WPF\BlackBee.Toolkit.Controls\ConvertBoolToVisibilite.cs">
+      <Link>Controls\ConvertBoolToVisibilite.cs</Link>
+    </Compile>
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controls\" />
+    <Page Include="..\WPF\BlackBee.Toolkit.Controls\BusyIndicatorControl.xaml">
+      <Link>Controls\BusyIndicatorControl.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

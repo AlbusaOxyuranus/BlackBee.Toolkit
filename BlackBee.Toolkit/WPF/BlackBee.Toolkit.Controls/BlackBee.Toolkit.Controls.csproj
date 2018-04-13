@@ -40,7 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusyIndicatorControl.xaml.cs">
+      <DependentUpon>BusyIndicatorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicatorPage.cs" />
+    <Compile Include="BusyIndicatorWindow.cs" />
+    <Compile Include="ConvertBoolToVisibilite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="BusyIndicatorControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
