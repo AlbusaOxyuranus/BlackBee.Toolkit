@@ -3,6 +3,7 @@
 
 using System;
 using System.Diagnostics;
+using System.Windows.Input;
 using BlackBee.Toolkit.Base.Helper;
 
 namespace BlackBee.Toolkit.Controls
@@ -35,6 +36,7 @@ namespace BlackBee.Toolkit.Controls
         //    get { return (bool)GetValue(IsNotPercentOperationProperty); }
         //    set { SetValue(IsNotPercentOperationProperty, value); }
         //}
+        
 
         // .NET Property wrapper
         public double Value
@@ -54,9 +56,38 @@ namespace BlackBee.Toolkit.Controls
             }
 
         }
+        //public ICommand Command
 
+        //{
+
+        //    get { return (ICommand)GetValue(CommandProperty); }
+
+        //    set { SetValue(CommandProperty, value); }
+
+        //}
+
+
+
+        //public object CommandParameter
+
+        //{
+
+        //    get { return GetValue(CommandParameterProperty); }
+
+        //    set { SetValue(CommandParameterProperty, value); }
+
+        //}
 #if !NETFX_CORE
 
+        //public static readonly DependencyProperty CommandProperty =
+
+        //    DependencyProperty.Register("Command", typeof(ICommand), typeof(BusyIndicatorControl), new PropertyMetadata(""));
+
+
+
+        //public static readonly DependencyProperty CommandParameterProperty =
+
+        //    DependencyProperty.Register("CommandParameter", typeof(object), typeof(BusyIndicatorControl), new PropertyMetadata(""));
 
         public static readonly DependencyProperty ValueProperty = DependencyProperty.Register(
             "Value",

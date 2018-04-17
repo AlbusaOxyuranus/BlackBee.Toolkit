@@ -22,9 +22,11 @@
             </LinearGradientBrush>
         </Grid.Background>
         <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" >
-            <ProgressBar x:Name="progressBar" Width="200" Height="20" Maximum="100" Value="{Binding Value, ElementName=userControl, IsAsync=True, Mode=TwoWay}" />
-            <TextBlock x:Name="MessageText" VerticalAlignment="Center" Text="{Binding Message, ElementName=userControl, FallbackValue=Выполнение операции\, пожалуйста подождите ...}" HorizontalAlignment="Center"  Foreground="White"/>
+            <ProgressBar x:Name="progressBar" Width="280" Height="10" Maximum="100" Value="{Binding Value, ElementName=userControl, IsAsync=True, Mode=TwoWay}" />
+            <TextBlock Margin="10" x:Name="MessageText" VerticalAlignment="Center" Text="{Binding Message, ElementName=userControl, FallbackValue=Выполнение операции\, пожалуйста подождите ...}" HorizontalAlignment="Center"  Foreground="White"/>
+            <!--<Button Content="Отменить" HorizontalAlignment="Center" Margin="10" Width="75" Command="{Binding Command,ElementName=userControl}"/>-->
         </StackPanel>
+       
 
     </Grid>
 </UserControl>

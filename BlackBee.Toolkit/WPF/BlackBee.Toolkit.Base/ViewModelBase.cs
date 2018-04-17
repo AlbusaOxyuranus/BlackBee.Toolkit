@@ -1,4 +1,7 @@
-﻿namespace BlackBee.Toolkit.Base
+﻿using BlackBee.Toolkit.Commands;
+using System.Windows.Input;
+
+namespace BlackBee.Toolkit.Base
 {
     public class ViewModelBase : ObjectBase
     {
@@ -10,6 +13,7 @@
         public ViewModelBase()
         {
             BussinessProcessMessage = "Выполнение операции";
+            PercentProcess = 0;
             IsPercent = false;
         }
 
@@ -24,6 +28,8 @@
             set
             {
                 _bussinessProcess = value;
+                if (!_bussinessProcess)
+                    _percentProcess = 0;
                 OnPropertyChanged();
             }
         }
@@ -66,6 +72,7 @@
             }
         }
 
+        public IAsyncCommand CancelAsyncCommand { get; }
         #endregion
     }
 }

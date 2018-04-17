@@ -47,5 +47,11 @@
     <Compile Include="Store.cs" />
     <Compile Include="ViewModelBase.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackBee.Toolkit.Commands\BlackBee.Toolkit.Commands.WPF.csproj">
+      <Project>{7CBA2F8C-E1A2-4E4D-9F56-92DE7A1890E1}</Project>
+      <Name>BlackBee.Toolkit.Commands.WPF</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
