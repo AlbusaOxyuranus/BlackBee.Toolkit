@@ -27,6 +27,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBee.Toolkit.Base.WPF.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBee.Toolkit.Base.UWP.Tests", "UWP\Toolkit.Tests\BlackBee.Toolkit.Base.UWP.Tests\BlackBee.Toolkit.Base.UWP.Tests.csproj", "{612565FC-AD27-4311-97CC-571F4BC58A3C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{1B6022C4-1011-4ADE-A5E8-337157615970}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet\BlackBee.ToolKit.nuspec = NuGet\BlackBee.ToolKit.nuspec
+	EndProjectSection
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "nuget", "NuGet\nuget.exe", "{CF282C5F-17E5-415C-82BA-3B18492C15C5}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\Dioni\OneDrive\Git\GitHub\BlackBee.Toolkit\scr\BlackBee.Toolkit\NuGet\nuget.exe
+		RemoteMachine = DESKTOP-O75RPGF
+		StartingDirectory = C:\Users\Dioni\OneDrive\Git\GitHub\BlackBee.Toolkit\scr\BlackBee.Toolkit\NuGet
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +157,14 @@ Global
 		{612565FC-AD27-4311-97CC-571F4BC58A3C}.Release|x86.ActiveCfg = Release|x86
 		{612565FC-AD27-4311-97CC-571F4BC58A3C}.Release|x86.Build.0 = Release|x86
 		{612565FC-AD27-4311-97CC-571F4BC58A3C}.Release|x86.Deploy.0 = Release|x86
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5}.Debug|ARM.ActiveCfg = Release|Any CPU
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5}.Debug|x64.ActiveCfg = Release|Any CPU
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5}.Debug|x86.ActiveCfg = Release|Any CPU
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5}.Release|x64.ActiveCfg = Release|Any CPU
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +180,7 @@ Global
 		{140060AA-CA73-4375-B9AC-1A8FE693ACF1} = {00E8EA10-9743-4304-BEB7-3FBEC5CE0CBE}
 		{373D1197-3480-4850-A8F4-883A64023373} = {140060AA-CA73-4375-B9AC-1A8FE693ACF1}
 		{612565FC-AD27-4311-97CC-571F4BC58A3C} = {027CA7F1-E0BA-4EE1-94B3-64F2E96B9CAB}
+		{CF282C5F-17E5-415C-82BA-3B18492C15C5} = {1B6022C4-1011-4ADE-A5E8-337157615970}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA7DD670-225B-4E56-B3FD-0875086B6F9A}
