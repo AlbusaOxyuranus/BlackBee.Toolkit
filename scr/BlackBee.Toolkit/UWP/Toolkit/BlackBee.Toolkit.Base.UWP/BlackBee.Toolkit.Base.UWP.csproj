@@ -7,8 +7,8 @@
     <ProjectGuid>{FDB63608-CD75-40FC-929E-DCEA68B02B4F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlackBee.Toolkit.Base.UWP</RootNamespace>
-    <AssemblyName>BlackBee.Toolkit.Base.UWP</AssemblyName>
+    <RootNamespace>BlackBee.Toolkit.Base</RootNamespace>
+    <AssemblyName>BlackBee.Toolkit.Base</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>

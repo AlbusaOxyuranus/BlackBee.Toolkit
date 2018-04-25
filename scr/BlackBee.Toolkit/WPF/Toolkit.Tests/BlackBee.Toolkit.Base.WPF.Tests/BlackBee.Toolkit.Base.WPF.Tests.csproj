@@ -7,8 +7,8 @@
     <ProjectGuid>{373D1197-3480-4850-A8F4-883A64023373}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlackBee.Toolkit.Base.WPF.Tests</RootNamespace>
-    <AssemblyName>BlackBee.Toolkit.Base.WPF.Tests</AssemblyName>
+    <RootNamespace>BlackBee.Toolkit.Base.Tests</RootNamespace>
+    <AssemblyName>BlackBee.Toolkit.Base.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
