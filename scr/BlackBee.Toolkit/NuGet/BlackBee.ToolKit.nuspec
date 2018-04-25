@@ -18,7 +18,7 @@
     </dependencies>
   </metadata>
    <files>
-    <file src="..\WPF\BlackBee.Toolkit.WPF\bin\Debug\BlackBee.Toolkit.dll" target="lib\net461" />
-    <file src="..\UWP\BlackBee.Toolkit.UWP\bin\Debug\BlackBee.Toolkit.dll" target="lib\uap10.0" />
+    <file src="..\WPF\BlackBee.Toolkit.WPF\bin\*\BlackBee.Toolkit.dll" target="lib\net461" />
+    <file src="..\UWP\BlackBee.Toolkit.UWP\bin\*\BlackBee.Toolkit.dll" target="lib\uap10.0" />
   </files>
 </package>
