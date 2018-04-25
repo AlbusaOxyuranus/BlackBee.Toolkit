@@ -5,14 +5,14 @@
     <version>1.0.0</version>
     <authors>Denis Prokhorchik</authors>
     <owners>Denis Prokhorchik</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <licenseUrl>https://github.com/AlbusaOxyuranus/BlackBee.Toolkit/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/AlbusaOxyuranus/BlackBee.Toolkit</projectUrl>
+    <iconUrl>http://i64.tinypic.com/1smkra.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Package description</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <description>BlackBee.Toolkit - it is a framework which allows lightning fast to start developing applications WPF, Windows Universal App.</description>
+    <releaseNotes>UWP+WPF</releaseNotes>
     <copyright>Copyright 2018</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>WPF, UWP</tags>
     <dependencies>
       <dependency id="SampleDependency" version="1.0" />
     </dependencies>
