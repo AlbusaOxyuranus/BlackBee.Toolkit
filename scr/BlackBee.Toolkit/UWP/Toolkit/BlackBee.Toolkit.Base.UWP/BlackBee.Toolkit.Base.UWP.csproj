@@ -106,6 +106,10 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\WPF\Toolkit\BlackBee.Toolkit.Base.WPF\ObjectBase.cs">
+      <Link>ObjectBase.cs</Link>
+    </Compile>
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\BlackBee.Toolkit.Base.UWP.rd.xml" />
   </ItemGroup>

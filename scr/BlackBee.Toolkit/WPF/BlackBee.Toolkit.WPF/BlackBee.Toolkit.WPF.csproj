@@ -40,10 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.WPF\ObjectBase.cs">
+      <Link>Base\ObjectBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.WPF\Properties\Annotations.cs">
+      <Link>Properties\Annotations.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Base\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
