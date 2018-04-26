@@ -13,9 +13,7 @@
     <releaseNotes>UWP+WPF</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>WPF, UWP</tags>
-    <dependencies>
-      <dependency id="SampleDependency" version="1.0" />
-    </dependencies>
+   
   </metadata>
    <files>
     <file src="..\WPF\BlackBee.Toolkit.WPF\bin\Release\BlackBee.Toolkit.dll" target="lib\net461" />

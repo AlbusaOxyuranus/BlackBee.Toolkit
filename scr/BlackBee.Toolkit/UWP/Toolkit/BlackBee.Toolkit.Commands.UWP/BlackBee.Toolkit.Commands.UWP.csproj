@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{fbf8914e-9666-41be-acf8-30331254a46d}</ProjectGuid>
+    <ProjectGuid>{FBF8914E-9666-41BE-ACF8-30331254A46D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BlackBee.Toolkit.Commands.UWP</RootNamespace>
@@ -106,7 +106,21 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="..\..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\AsyncCommand.cs">
+      <Link>AsyncCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\AsyncCommandBase.cs">
+      <Link>AsyncCommandBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\IAsyncCommand.cs">
+      <Link>IAsyncCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\NotifyTaskCompletion.cs">
+      <Link>NotifyTaskCompletion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\RelayCommand.cs">
+      <Link>RelayCommand.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\BlackBee.Toolkit.Commands.UWP.rd.xml" />
   </ItemGroup>

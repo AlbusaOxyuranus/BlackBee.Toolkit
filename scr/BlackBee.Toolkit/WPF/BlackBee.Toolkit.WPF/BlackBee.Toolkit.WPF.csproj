@@ -52,6 +52,21 @@
     <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.WPF\Store.cs">
       <Link>Base\Store.cs</Link>
     </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Commands.WPF\AsyncCommand.cs">
+      <Link>Commands\AsyncCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Commands.WPF\AsyncCommandBase.cs">
+      <Link>Commands\AsyncCommandBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Commands.WPF\IAsyncCommand.cs">
+      <Link>Commands\IAsyncCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Commands.WPF\NotifyTaskCompletion.cs">
+      <Link>Commands\NotifyTaskCompletion.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Commands.WPF\RelayCommand.cs">
+      <Link>Commands\RelayCommand.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -115,6 +115,21 @@
     <Compile Include="..\..\WPF\Toolkit\BlackBee.Toolkit.Base.WPF\Store.cs">
       <Link>Base\Store.cs</Link>
     </Compile>
+    <Compile Include="..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\AsyncCommand.cs">
+      <Link>Commands\AsyncCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\AsyncCommandBase.cs">
+      <Link>Commands\AsyncCommandBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\IAsyncCommand.cs">
+      <Link>Commands\IAsyncCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\NotifyTaskCompletion.cs">
+      <Link>Commands\NotifyTaskCompletion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\RelayCommand.cs">
+      <Link>Commands\RelayCommand.cs</Link>
+    </Compile>
     <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.UWP\Properties\Annotations.cs">
       <Link>Properties\Annotations.cs</Link>
     </Compile>
