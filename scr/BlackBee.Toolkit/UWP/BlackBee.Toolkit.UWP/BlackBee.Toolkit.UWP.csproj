@@ -115,6 +115,9 @@
     <Compile Include="..\..\WPF\Toolkit\BlackBee.Toolkit.Base.WPF\Store.cs">
       <Link>Base\Store.cs</Link>
     </Compile>
+    <Compile Include="..\..\WPF\Toolkit\BlackBee.Toolkit.Base.WPF\ViewModelBase.cs">
+      <Link>Base\ViewModelBase.cs</Link>
+    </Compile>
     <Compile Include="..\..\wpf\toolkit\blackbee.toolkit.commands.wpf\AsyncCommand.cs">
       <Link>Commands\AsyncCommand.cs</Link>
     </Compile>

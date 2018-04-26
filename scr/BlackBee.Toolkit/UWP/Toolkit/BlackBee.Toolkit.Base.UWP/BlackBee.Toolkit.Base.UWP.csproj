@@ -115,6 +115,9 @@
     <Compile Include="..\..\..\WPF\Toolkit\BlackBee.Toolkit.Base.WPF\Store.cs">
       <Link>Store.cs</Link>
     </Compile>
+    <Compile Include="..\..\..\WPF\Toolkit\BlackBee.Toolkit.Base.WPF\ViewModelBase.cs">
+      <Link>ViewModelBase.cs</Link>
+    </Compile>
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\BlackBee.Toolkit.Base.UWP.rd.xml" />
@@ -123,6 +126,12 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.8</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackBee.Toolkit.Commands.UWP\BlackBee.Toolkit.Commands.UWP.csproj">
+      <Project>{fbf8914e-9666-41be-acf8-30331254a46d}</Project>
+      <Name>BlackBee.Toolkit.Commands.UWP</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

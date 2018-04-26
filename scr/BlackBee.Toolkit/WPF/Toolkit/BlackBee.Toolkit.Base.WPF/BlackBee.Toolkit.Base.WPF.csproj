@@ -45,6 +45,13 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Store.cs" />
+    <Compile Include="ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlackBee.Toolkit.Commands.WPF\BlackBee.Toolkit.Commands.WPF.csproj">
+      <Project>{1a797f9d-12c7-461f-bfdf-55c1dbe171c2}</Project>
+      <Name>BlackBee.Toolkit.Commands.WPF</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
