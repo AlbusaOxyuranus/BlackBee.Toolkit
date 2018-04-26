@@ -40,11 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.WPF\Helper\SugarExtensions.cs">
+      <Link>Base\Helper\SugarExtensions.cs</Link>
+    </Compile>
     <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.WPF\ObjectBase.cs">
       <Link>Base\ObjectBase.cs</Link>
     </Compile>
     <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.WPF\Properties\Annotations.cs">
       <Link>Properties\Annotations.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.WPF\Store.cs">
+      <Link>Base\Store.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
