@@ -30,14 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Toolkit\BlackBee.Toolkit.Base.WPF\Helper\SugarExtensions.cs">
@@ -70,8 +75,69 @@
     <Compile Include="..\Toolkit\BlackBee.Toolkit.Commands.WPF\RelayCommand.cs">
       <Link>Commands\RelayCommand.cs</Link>
     </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Controls\BusyIndicatorControl.xaml.cs">
+      <Link>Controls\BusyIndicatorControl.xaml.cs</Link>
+      <DependentUpon>BusyIndicatorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Controls\BusyIndicatorPage.cs">
+      <Link>Controls\BusyIndicatorPage.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Controls\BusyIndicatorView.cs">
+      <Link>Controls\BusyIndicatorView.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Controls\ConvertBoolToVisibilite.cs">
+      <Link>Controls\ConvertBoolToVisibilite.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\BackEndError.cs">
+      <Link>Rest\EasyConnect\BackEndError.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\ConnectionBackEndException.cs">
+      <Link>Rest\EasyConnect\ConnectionBackEndException.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\Content.cs">
+      <Link>Rest\EasyConnect\Content.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\EncodedContent.cs">
+      <Link>Rest\EasyConnect\EncodedContent.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\Error.cs">
+      <Link>Rest\EasyConnect\Error.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\HelperStreamReader.cs">
+      <Link>Rest\EasyConnect\HelperStreamReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\Interfaces\IHelperStreamReader.cs">
+      <Link>Rest\EasyConnect\Interfaces\IHelperStreamReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\Interfaces\IProxy.cs">
+      <Link>Rest\EasyConnect\Interfaces\IProxy.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\Proxy.cs">
+      <Link>Rest\EasyConnect\Proxy.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyConnect\Serializer.cs">
+      <Link>Rest\EasyConnect\Serializer.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyData\Classes\ResponceServer.cs">
+      <Link>Rest\EasyData\Classes\ResponceServer.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyData\DataContext.cs">
+      <Link>Rest\EasyData\DataContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyData\Helper\TypeSerialize.cs">
+      <Link>Rest\EasyData\Helper\TypeSerialize.cs</Link>
+    </Compile>
+    <Compile Include="..\Toolkit\BlackBee.Toolkit.Rest\EasyData\IDataContext.cs">
+      <Link>Rest\EasyData\IDataContext.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Page Include="..\Toolkit\BlackBee.Toolkit.Controls\BusyIndicatorControl.xaml">
+      <Link>Controls\BusyIndicatorControl.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
