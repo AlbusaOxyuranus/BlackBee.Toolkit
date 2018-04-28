@@ -32,8 +32,9 @@ namespace BlackBee.Toolkit.Controls
             _busyIndicator.HorizontalAlignment = HorizontalAlignment.Stretch; //HorizontalAlignment.Stretch;
             _busyIndicator.VerticalAlignment = VerticalAlignment.Stretch;
 
-            rootGrid.Children.Add(_busyIndicator);
-            Grid.SetRowSpan(_busyIndicator, 2);
+            
+                if(rootGrid.RowDefinitions.Count>1)
+                {Grid.SetRowSpan(_busyIndicator, rootGrid.RowDefinitions.Count);}
             //_BusyIndicator.DataContext = _rootGrid.DataContext;
             //_BusyIndicator.Visibility = Visibility.Collapsed;
         }
